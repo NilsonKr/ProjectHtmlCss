@@ -1,6 +1,9 @@
-const update = document.querySelector('#update')
+const update = document.querySelectorAll('.update')
 const date = new Date()
-const dateUpdate = document.createTextNode(date.toLocaleString())
+console.log(update)
 
-update.appendChild(dateUpdate)
+update.forEach(up => {
+    const dateUpdate = document.createTextNode(date.toLocaleString())
+    up.appendChild(dateUpdate)
+})
 

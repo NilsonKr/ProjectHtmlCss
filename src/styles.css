@@ -130,21 +130,27 @@ main{
     color: var(--gray-strong);
 }
 
-.currency{
+.currency,
+.commisions{
     width: 70%;
     min-width: 235px;
     max-width: 580px;
     margin: 40px auto 0;
 
 }
- .currency h3{
+ .currency h3,
+ .commisions h2{
     margin: 0 0 5px 20px;
     font-size: 1.9rem;
     font-weight: bold;
     line-height: 2.3rem;
     color: var(--orange);
 }
-.currency-table{
+.commisions h2{
+    color: var(--blue);
+}
+.currency-table,
+.commisions-table{
     width: 90%;
     min-width: 230px;
     max-width: 500px;
@@ -154,30 +160,42 @@ main{
     border-radius: 15px;
     box-shadow: 0 0 10px -5px var(--gray);
 } 
-.currency-table table{
+.currency-table table,
+.commisions-table table{
     width: 100%;
     height: 100%;
     text-align: center;
 }
 
-.currency-table table td{
+.currency-table table td,
+.commisions-table table td{
     width: 50%;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
     font-weight:500 ;
-    color: var(--gray-strong);
+    color: var(--gray);
     background-color: var(--white);
 }
-.currency-table .currency_top-left{
+.commisions-table table .right,
+.currency-table table .currency-right{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var(--gray-strong);
+}
+.currency-table .currency_top-left,
+.commisions-table .commisions_top-left{
     border-radius: 15px 0 0 0 ;
 }
-.currency-table .currency_top-right{
+.currency-table .currency_top-right,
+.commisions-table .commisions_top-right{
     border-radius: 0 15px 0 0 ;
 }
-.currency-table .currency_bottom-right{
+.currency-table .currency_bottom-right,
+.commisions-table .commisions_bottom-right{
     border-radius: 0 0 15px 0 ;
 }
-.currency-table .currency_bottom-left{
+.currency-table .currency_bottom-left,
+.commisions-table .commisions_bottom-left{
     border-radius: 0 0 0 15px ;
 }
 .currency-table td .down,
@@ -192,7 +210,8 @@ main{
 .currency-table td .up{
     background: url('../svg/icons/trending-up.svg') center/ cover no-repeat;
 }
-.currency-update{
+.currency-update,
+.commisions-update{
     text-align: center;
     width: 85%;
     height: 30px;
@@ -201,9 +220,13 @@ main{
     border-radius: 7px;
     background-color: var(--orange-soft);
 }
-.currency-update p{
+.commisions-update{
+    background-color: var(--blue-soft);
+}
+.currency-update p,
+.commisions-update p{
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.5rem;
-    color: var(--black-main);
+    color: var(--black-secondary);
 }
