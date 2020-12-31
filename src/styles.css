@@ -32,6 +32,7 @@
 html{
     font-size: 62.5%;
     font-family: var(--DM-SANS);
+    scroll-behavior: smooth;
 }
 
 header{
@@ -250,6 +251,7 @@ main{
 .product-details{
     width: 90%;
     min-width: 288px;
+    max-width: 500px;
     margin: 30px auto 0;
     text-align: center;
 }
@@ -273,7 +275,7 @@ main{
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 160px;
+    min-height: 150px;
     background-color: var(--black-secondary);
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
@@ -307,4 +309,63 @@ main{
     font-size: 1.4rem;
     line-height: 1.7rem;
     color: var(--gray);
+}
+.comodin-section{
+    padding-top: 80px;
+    width: 100%;
+    min-height:380px ;
+    text-align: center;
+    background: url('https://i.ibb.co/5WdDhBd/bitcoinbaby2x.jpg') center / cover no-repeat;
+}
+.comodin-section h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6px;
+    color: var(--white);
+}
+
+.plans-section{
+    padding: 50px 10px;
+    width: 100%;
+    text-align: center;
+}
+.plans-details{
+    margin:0 auto 20px;
+    width: 90%;
+    min-width: 288px;
+}
+.plans-details h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black-main);
+}
+.plans-details p{
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-size: 500;
+    line-height: 1.8rem;
+    color: gray;
+}
+.plans-card{
+    position: relative;
+    width: 220px;
+    max-width: 300px;
+    height: 300px;
+    margin: 40px auto 0;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+}
+.plans-card .float{
+    position: absolute;
+    top:-15px;
+    left: calc(50% - 55px);
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: var(--white);
 }
