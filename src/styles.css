@@ -236,7 +236,7 @@ main{
     width: 100%;
     min-width: 320px;
     margin-top: 50px;
-    padding: 20px 10px;
+    padding: 20px 15px;
     background-color: var(--black-main);
 }
 .product-section_logo{
@@ -265,4 +265,46 @@ main{
     font-weight: 500;
     line-height: 1.8rem;
     color: #808080;
+}
+
+.card{
+    margin:20px auto 0 ;
+    padding: 15px 20px;
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 160px;
+    background-color: var(--black-secondary);
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.card .icon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+.card .time{
+    background: url('../svg/icons/clock.svg') center / cover no-repeat;
+}
+.card .eye{
+    background: url('../svg/icons/eye.svg') center / cover no-repeat; 
+}
+.card .dollar{
+    background: url('../svg/icons/dollar-sign.svg') center / cover no-repeat; 
+}
+.card .check{
+    background: url('../svg/icons/check-circle.svg') center / cover no-repeat; 
+}
+.card h3{
+    margin-top: 7px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--off-white);
+}
+.card p{
+    margin-top: 7px;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: var(--gray);
 }
