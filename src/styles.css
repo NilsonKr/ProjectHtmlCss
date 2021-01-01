@@ -349,23 +349,110 @@ main{
 }
 .plans-card{
     position: relative;
-    width: 220px;
+    width: 200px;
     max-width: 300px;
-    height: 300px;
+    height: 250px;
     margin: 40px auto 0;
     background-color: var(--white);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
 }
+
 .plans-card .float{
     position: absolute;
     top:-15px;
     left: calc(50% - 55px);
-    padding: 10px;
+    width: 110px;
+    padding: 8px 0;
     font-size: 1.3rem;
     font-weight: bold;
     line-height: 1.5rem;
     border-radius: 10px;
     background-color: var(--orange);
     color: var(--white);
+}
+
+.basic .float{
+    background-color: var(--gray-strong);
+}
+.vip .float{
+    background-color: var(--blue);
+    z-index: 1
+}
+.vip .plans-card__details{
+    position: relative;
+}
+.vip .vip-tag{
+    position: absolute;
+    bottom: 20px;
+    right: -50px;
+    width: 80%;
+    padding: 3px 0;
+    background-color: var(--blue);
+    font-size: 1.4rem;
+    font-weight: bold;
+    transform: rotate(-45deg);
+}
+.plans-card__details{
+    overflow: hidden;
+    height: 100%;
+}
+
+.plans-card__details h2{
+    margin-top: 30px;
+    font-family: var(--Inter);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+.plans-card__details .price{
+    position: relative;
+    margin-top: 10px;
+    font-size: 5.2rem;
+    font-weight: bold;
+    letter-spacing: -0.5rem;
+    line-height: 6.3rem;
+}
+.plans-card__details .price span{
+    vertical-align: calc(100% + 12px);
+    margin-right: 5px;
+    font-size:1.3rem ;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color:var(--gray-strong);
+}
+.plans-card__details .description{
+    margin-top: 8px;
+    font-family: var(--Inter);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #757575;
+}
+.plans-card__details button{
+    margin-top: 20px;
+    height: 48px;
+    width: 70%;
+    font-family: var(--DM-SANS);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    background-color: var(--off-white);
+    border: 2px var(--orange) solid;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+.basic .plans-card__details button{
+    border-color: var(--gray-strong);
+}
+.vip .plans-card__details button{
+    border-color: var(--blue);
+}
+.plans-card__details button span{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url('../svg/icons/orange-right-arrow.svg') center / cover no-repeat;
+    vertical-align: text-bottom;
 }
