@@ -9,20 +9,6 @@ updateDate()
 
 carousel.scrollLeft = 180
 
-
-function moveArrow (){
-    arrows.forEach( arrow =>{
-        const display = 'inline-block'
-        if(arrow === arrows[0]){
-            arrow.style.right = `-${move}px`
-            arrow.style.display = display 
-        }else{
-            arrow.style.left = `${move}px`
-            arrow.style.display = display 
-        }
-    })
-}
-
 function postionArrow(position,dir){
     if(dir === true){
         switch(true){
@@ -68,5 +54,4 @@ arrows.forEach(arrow => {
     })
 })
 
-moveArrow()
 
