@@ -329,6 +329,41 @@ main{
     width: 100%;
     text-align: center;
 }
+
+.plans-carousel{
+    position: relative;
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+    padding-bottom: 30px ;
+}
+.arrow{
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 4rem;
+    font-weight: bold;
+    z-index: 1;
+    background-color: var(--blue-soft);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+}
+.arrow:active,
+.arrow:focus{
+    transform: scale(1.2);
+}
+.a-right{
+    right: 0;
+    top: calc(50% - 2rem);
+}
+.a-left{
+    left: 0;
+    top: calc(50% - 2rem); ;
+}
 .plans-details{
     margin:0 auto 20px;
     width: 90%;
@@ -348,14 +383,23 @@ main{
     color: gray;
 }
 .plans-card{
+    scroll-snap-align:  center;
     position: relative;
-    width: 200px;
+    padding-top: 30px;
+    width: 65%;
+    min-width: 200px;
     max-width: 300px;
     height: 250px;
-    margin: 40px auto 0;
+    margin: 40px 10px 0;
     background-color: var(--white);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+}
+.plans-carousel:hover .plans-card{
+    opacity: 0.4;
+}
+.plans-carousel:hover .plans-card:hover{
+    opacity: 1;
 }
 
 .plans-card .float{
@@ -375,12 +419,12 @@ main{
 .basic .float{
     background-color: var(--gray-strong);
 }
+.vip{ 
+    background-color: var(--blue-soft);
+}
 .vip .float{
     background-color: var(--blue);
     z-index: 1
-}
-.vip .plans-card__details{
-    position: relative;
 }
 .vip .vip-tag{
     position: absolute;
@@ -393,13 +437,13 @@ main{
     font-weight: bold;
     transform: rotate(-45deg);
 }
-.plans-card__details{
+.vip .plans-card__details{
+    position: relative;
     overflow: hidden;
     height: 100%;
 }
 
 .plans-card__details h2{
-    margin-top: 30px;
     font-family: var(--Inter);
     font-size: 1.5rem;
     font-weight: 500;
