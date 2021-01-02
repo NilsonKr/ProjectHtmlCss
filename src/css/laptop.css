@@ -1,0 +1,69 @@
+header img{
+    width: 250px;
+    height: 70px;
+}
+.header--button{
+    left: calc(50% - 20%);
+    max-width: 40%;
+}
+.header-info_container h1{
+    font-size: 3.5rem;
+}
+.header-info_container p{
+    margin-top: 45px;
+    font-size: 2rem;
+}
+.exchange-image{
+    width: 300px;
+    height: 300px;
+}
+.exchange-info h2,
+.product-details h2,
+.comodin-section h2,
+.plans-details h2{
+    font-size: 3rem;
+}
+.exchange-info p,
+.product-details p,
+.plans-details p{
+    font-size:2.1rem ;
+    line-height: 3rem;
+}
+.currency h3,
+.commisions h2{
+    font-size: 2.2rem;
+}
+.exchange-table-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.currency .update,
+.commisions .update{
+    font-size: 1.7rem;
+}
+.product-section_logo{
+    width: 80px;
+    height: 50px;
+    top: -25px;
+}
+.product-cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.plans-carousel{
+    justify-content: center;
+}
+.media-footer ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.media-footer li a{
+    font-size: 2rem;
+}
+.footer-logo{
+    width: 120px;
+    height: 80px;
+}

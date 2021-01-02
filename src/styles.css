@@ -66,7 +66,7 @@ header{
 }
 .header-info_container p {
     margin-top: 35px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.8rem;
     color: var(--orange-soft);
@@ -74,8 +74,9 @@ header{
 .header--button{
     position: absolute;
     top: calc(100% - 30px);
-    left: calc(50% - 35%);
-    width: 70%;
+    left: calc(50% - 25%);
+    width: 100%;
+    max-width: 50%;
     padding: 20px 0;
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -305,6 +306,7 @@ main{
     color: var(--off-white);
 }
 .card p{
+    padding: 0 5px;
     margin-top: 7px;
     font-size: 1.4rem;
     line-height: 1.7rem;
@@ -524,4 +526,10 @@ footer{
 .footer-logo{
     min-width: 80px;
     height: 60px;
+}
+
+@media (min-width: 321px){
+    .arrow{
+        display: none;
+    }
 }
